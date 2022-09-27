@@ -17,17 +17,13 @@ const Navbar = () => {
         </div>
         <div className=" hidden md:flex">
           <ul className="flex text-white items-center">
-           <Link to={'/'}>
-           <li>Home</li>
-           </Link>
+            <Link to={"/"}>
+              <li>Home</li>
+            </Link>
 
-           <Link to={'/search'}>
-           <li>Search</li>
-           </Link>
-           
-            
-            
-           
+            <Link to={"/search"}>
+              <li>Search</li>
+            </Link>
           </ul>
         </div>
         {/* Ham burger */}
@@ -51,14 +47,13 @@ const Navbar = () => {
         {!toggle ? (
           <div className="  md:hidden w-full  bg-black text-white absolute top-[60px] left-0  flex justify-center text-center">
             <ul className="text-2xl">
-            <Link to={'/'}>
-           <li>Home</li>
-           </Link>
+              <Link to={"/"}>
+                <li>Home</li>
+              </Link>
 
-           <Link to={'/search'}>
-           <li>Search</li>
-           </Link>
-             
+              <Link to={"/search"}>
+                <li>Search</li>
+              </Link>
             </ul>
           </div>
         ) : (
