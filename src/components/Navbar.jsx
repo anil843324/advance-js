@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="w-full  h-[60px] bg-black">
       <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
         <div>
-          <h1 className="text-[#00d8ff] ">DEFI</h1>
+          <h1 className="text-[#00d8ff] ">Brewery</h1>
         </div>
         <div className=" hidden md:flex">
           <ul className="flex text-white items-center">
