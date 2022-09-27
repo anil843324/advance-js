@@ -8,16 +8,27 @@ const Search = () => {
 
    const [input,setInput]=useState('')
 
+
+
+   // tryed to implement but i don't know why not working  i have implement on my project already 
   useEffect(() => {
-    fetch("https://api.openbrewerydb.org/breweries")
+
+     let timeOut= setTimeout(()=>{
+      fetch(`https://api.openbrewerydb.org/breweries/search?query=${input}`)
       .then((res) => {
         return res.json();
       })
       .then((fData) => setData(fData));
-  }, []);
+
+     },5000)
+   
+
+       return ()=> clearTimeout(timeOut)
+  }, [input]);
+    
 
 
-
+ console.log(data)
  
 
 
